@@ -506,6 +506,11 @@ footer .copyright a:hover{
     color: #000;
 }
 @media screen and (max-width: 768px) {
+  .front-il article {
+      width: 30%;
+      margin: 0 3.9% 0 0;
+      padding: 0;
+  }
   #itempage #img-box {
       margin-right: 0;
       padding-bottom: 0;
@@ -543,6 +548,13 @@ footer .copyright a:hover{
 .cat-il.type-grid .itemprice {
   text-align: center;
   padding-bottom: 4.2857em;
+}
+@media screen and (max-width: 768px) {
+  .cat-il.type-grid article {
+      width: 30%;
+      margin: 0 3.9% 0 0;
+      padding: 0;
+  }
 }
 
 /*** detail ***/
@@ -780,4 +792,17 @@ div.cart_navi li.current::after {
 .customer_form td {
   padding: 2em 1.07143em;
   border: 1px solid #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  button.s_button {
+      margin: 1em;
+  }
+  .customer_form th {
+      border:0;
+      font-size: 1.2em;
+  }
+  .customer_form tr {
+      border-bottom: 0;
+  }
 }
