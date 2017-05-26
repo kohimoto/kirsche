@@ -544,8 +544,7 @@ footer .copyright a:hover{
   text-align: center;
   padding-bottom: 4.2857em;
 }
-@media screen and (max-width: 768px) {
-}
+
 /*** detail ***/
 #primary{
   text-align: left;
@@ -633,7 +632,16 @@ footer .copyright a:hover{
   border-radius: 3px;
   float: right;
 }
-
+@media screen and (max-width: 768px) {
+  #itempage #img-box {
+      margin-right: 0;
+      padding-bottom: 0;
+      width: 100%;
+  }
+  .detail-box{
+      width: 100%;
+  }
+}
 
 /*** cart ***/
 .cart_navi{
