@@ -179,7 +179,17 @@ if(0){
 $cat = get_the_category();
 $cat = $cat[0];
 $cat_id = $cat->cat_ID;
-query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
+
+$id = $post->ID;
+$query = array();
+$query["posts_per_page"]    = 3;
+$query["cat"]               = $cat_id;
+$query["post_status"]       = "publish";
+$query["post__not_in"][]    = $id; //現在の記事非表示
+ 
+file_put_contents("/tmp/kohi.txt",print_r("\npost:".$id,true),FILE_APPEND);
+//query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
+query_posts($query); 
 ?>
 <?php if ( 'page' == get_option('show_on_front') ): ?>
 	<div class="sof">

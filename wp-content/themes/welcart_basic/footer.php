@@ -8,11 +8,13 @@
 	<?php endif; ?>
 	
 	<footer id="colophon" role="contentinfo">
-	
-		
-		<p class="copyright">Copyright &copy; 2017 Kohimoto. All Rights Reserved.</p>
-	
+
+
+		<p class="copyright">Copyright &copy; 2017 kohimoto. All Rights Reserved. Designed by <a href="http://kohimoto.com/" target="_blank">kohimoto</a>.</p>
+
 	</footer><!-- #colophon -->
+	<script src="/wp-content/themes/welcart_basic/js/jquery.min.js"></script>
+	<script src="/wp-content/themes/welcart_basic/js/navnemu.js"></script><!-- navmenu -->
 	
 	<?php wp_footer(); ?>
 	</body>
