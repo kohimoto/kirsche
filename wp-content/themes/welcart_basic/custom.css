@@ -407,7 +407,10 @@ header{
     left: 1em;
   }
 }
-
+.no-date{
+  text-align: center;
+  color: red;
+}
 
 /*** footer ***/
 footer {
