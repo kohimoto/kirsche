@@ -570,7 +570,9 @@ footer .copyright a:hover{
       width: 100%;
   }
 }
-
+.tag_area{
+  display: none;
+}
 /*** cart ***/
 .cart_navi{
   padding-bottom: 3em;

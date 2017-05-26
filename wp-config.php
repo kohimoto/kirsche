@@ -30,8 +30,8 @@ define('DB_USER', 'kohimoto');
 define('DB_PASSWORD', 'kohimoto_manage');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'mysql537.db.sakura.ne.jp');
-//define('DB_HOST', 'localhost');
+//define('DB_HOST', 'mysql537.db.sakura.ne.jp');
+define('DB_HOST', 'localhost');
 
 /** データベースのテーブルを作成する際のデータベースのキャラクターセット */
 define('DB_CHARSET', 'utf8');

@@ -22,7 +22,9 @@ $head = ob_get_contents();
 $head = preg_replace("/<title>.*<\/title>/","<title>".$head_title." | kirsche</title>",$head);
 ob_end_clean();
 echo $head;
+
 ?>
+
 <h1 class="logo"><a href="/"><img src="/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">
 	<div id="content" role="main">
@@ -38,7 +40,23 @@ echo $head;
 
 			<?php usces_remove_filter(); ?>
 			<?php usces_the_item(); ?>
+			<?php usces_the_item(); ?>
 			<?php usces_have_skus(); ?>
+
+<div class="tag_area">
+<ul>
+<?
+$arr = get_the_tags();
+foreach($arr as $tag){
+?>
+<li>
+<?=$tag->name?>
+</li>
+<?
+}
+?>
+</ul>
+</div>
 
 				<div id="itempage">
 
@@ -187,7 +205,6 @@ $query["cat"]               = $cat_id;
 $query["post_status"]       = "publish";
 $query["post__not_in"][]    = $id; //現在の記事非表示
  
-file_put_contents("/tmp/kohi.txt",print_r("\npost:".$id,true),FILE_APPEND);
 //query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
 query_posts($query); 
 ?>
