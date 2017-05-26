@@ -23,7 +23,7 @@ $head = preg_replace("/<title>.*<\/title>/","<title>".$head_title." | kirsche</t
 ob_end_clean();
 echo $head;
 ?>
-<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
+<h1 class="logo"><a href="/"><img src="/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">
 	<div id="content" role="main">
 
@@ -219,7 +219,7 @@ query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish');
 </div><!-- #primary2 -->
 <!-- #how 'bout this -->
 
-<div class="button"><a href="/kirsche"><button>Shop</button></a></div>
+<div class="button"><a href="/category/item/"><button>Shop</button></a></div>
 
 <?php get_footer(); ?>
 

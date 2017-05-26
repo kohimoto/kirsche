@@ -53,8 +53,8 @@
 			<?php endif; ?>
 			
 		</div><!-- .inner -->
-		<div class="message_left message"><a>papyrus</a></div>
-		<div class="message_right message"><a>Goods day!</a></div>
+		<div class="message_left message"><a href="/category/papyrus">papyrus</a></div>
+		<div class="message_right message"><a href="/category/goods">Goods day!</a></div>
 		
 
 	</header><!-- #masthead -->
