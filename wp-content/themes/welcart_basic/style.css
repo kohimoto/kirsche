@@ -1192,9 +1192,9 @@ footer nav li:nth-of-type(6n) {
 	letter-spacing: normal;
 	vertical-align: text-top;
 }
-.cat-il.type-grid article:nth-of-type(even) {
+/*.cat-il.type-grid article:nth-of-type(even) {
 	margin-right: 0;
-}
+}*/
 .cat-il.type-grid .itemimg {
 	margin-bottom: .357143em;
 	text-align: center;
@@ -1730,6 +1730,7 @@ footer nav li:nth-of-type(6n) {
 	.cat-il.type-grid {
 		margin-bottom: 1.42857em;
 	}
+	/*
 	.cat-il.type-grid article {
 		width: 22%;
 		margin-right: 4%;
@@ -1740,7 +1741,7 @@ footer nav li:nth-of-type(6n) {
 	.cat-il.type-grid article:nth-of-type(4n) {
 		margin-right: 0;
 	}
-
+*/
 
 	/* =contetns
 	-------------------------------------------------------------- */
