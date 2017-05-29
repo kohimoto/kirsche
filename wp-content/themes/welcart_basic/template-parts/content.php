@@ -6,10 +6,15 @@
 ?>
 
 <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
+<?
+if(0){
+?>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header>
+<?
+}
+?>
 	
 	<?php if(is_single() ): ?>
 		<?php if(!usces_is_item()): ?>
@@ -22,7 +27,7 @@
 		<?php endif; ?>
 	<?php endif; ?>
 	
-	<div class="entry-content">
+	<div>
 		<?php the_content(__('(more...)')); ?>
 	</div><!-- .entry-content -->
 

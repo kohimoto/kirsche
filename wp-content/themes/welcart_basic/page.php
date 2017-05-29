@@ -23,5 +23,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar('other'); ?>
+<?php if(0){get_sidebar('other');} ?>
 <?php get_footer(); ?>
