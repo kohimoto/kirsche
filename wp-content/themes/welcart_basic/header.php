@@ -15,15 +15,18 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/custom.css" media="all">
 </head>
-
+<?
+//2017.05.30 kohinata
+$access_url = $_SERVER["REQUEST_URI"];
+?>
 <body <?php body_class(); ?>>
 
 <?php if(! welcart_basic_is_cart_page()): ?>
 	<header id="masthead" class="site-header" role="banner">
-		
+
 		<div class="inner cf">
 
-			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
+			<?php $heading_tag = ( is_home() || is_front_page() || preg_match("/about/", $access_url)) ? 'h1' : 'div'; ?>
 
 		<nav id="nav" role="navigation">
 		<a href="#" class="nav-toggle nav-toggle active"><i></i></a>
@@ -40,7 +43,7 @@
 		</nav>
 		<div class="head_nav">
 			<a href="#" class="nav-toggle o-nav-toggle"><i></i></a>
-		</div>
+	</div>
 			<?php if(! welcart_basic_is_cart_page()): ?>
 
 			<div class="snav cf">
@@ -51,16 +54,16 @@
 			</div><!-- .snav -->
 
 			<?php endif; ?>
-			
+
 		</div><!-- .inner -->
 		<div class="message_left message"><a href="/category/papyrus">papyrus</a></div>
 		<div class="message_right message"><a href="/category/goods">Goods day!</a></div>
-		
+
 
 	</header><!-- #masthead -->
 <?php endif; ?>
 
-	<?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
+	<?php if( ( is_front_page() || is_home() ) || preg_match("/about/", $access_url) && get_header_image() ): ?>
 	<div class="main-image">
 	<h1 class="logo"><a href="/"><img src="/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
@@ -68,7 +71,8 @@
 	<?php endif; ?>
 
 	<?php
-		if( is_front_page() || is_home() || welcart_basic_is_cart_page() || welcart_basic_is_member_page() ) {
+
+		if( is_front_page() || is_home() || welcart_basic_is_cart_page() || welcart_basic_is_member_page() || preg_match("/about/", $access_url)) {
 			$class = 'one-column';
 		}else {
 			$class = 'two-column right-set';

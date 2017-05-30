@@ -4,25 +4,6 @@
  * @subpackage Welcart_Basic
  */
 get_header(); ?>
-<?
-//2017.05.30 kohinata
-$access_url = $_SERVER["REQUEST_URI"];
-if(preg_match("/about/", $access_url)){
-?>
-<div class="main-image">
-<h1 class="logo"><a href="/"><img src="/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
-	<img src="http://kirsche:8080/wp-content/themes/welcart_basic/images/image-top.jpg" width="1000" height="400" alt="kirsche">
-</div><!-- main-image -->
-
-
-<div id="main" class="wrapper one-column">
-<h2>About us</h2>
-
-
-<?
-}
-?>
-
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 
