@@ -728,7 +728,7 @@ div.cart_navi li.current::after {
   border: 0;
   background-color: inherit;
   text-align: left;
-  padding: 4em 2em 0 ;
+  padding: 4em 1em 0 ;
   vertical-align:top;
 }
 #cart_table tfoot th{
@@ -743,7 +743,7 @@ div.cart_navi li.current::after {
   padding: 4em 2em 0 ;
 }
 #cart_table tbody tr:last-child td {
-  padding: 4em 2em 4em;
+  padding: 4em 1em 4em;
 }
 #cart_table .amount {
   font-size: 1em;
@@ -807,6 +807,9 @@ div.cart_navi li.current::after {
   .customer_form tr {
       border-bottom: 0;
   }
+  .customer_form td {
+    border: 0;
+  }
 }
 /*** notes ***/
 .notes .item-name{
@@ -837,6 +840,17 @@ div.cart_navi li.current::after {
 .contact .item-description{
   text-align:center;
   padding-bottom: 60px;
+}
+.contact .item-description ul li{
+  padding-right:10px;
+}
+.contact .item-description ul li:nth-child(2){
+  padding-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .contact .item-description ul li img{
+    width: 38px;
+  }
 }
 .contact .fixmessage{
   text-align: center;
