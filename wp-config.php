@@ -19,6 +19,19 @@
 // (http://wpdocs.sourceforge.jp/Codex:%E8%AB%87%E8%A9%B1%E5%AE%A4 参照)
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
+//プロクシでIPが入るとSSLアクセス状態をセットする　2017.05.30 kohinata
+$domain = "kirsche-stg.tk";
+//$domain = "kirsche.com"; //本番
+if( isset($_SERVER['HTTP_X_SAKURA_FORWARDED_FOR']) ) {
+    $_SERVER['HTTPS'] = 'on';
+    $_ENV['HTTPS'] = 'on';
+    $_SERVER['HTTP_HOST'] = $domain;
+    $_SERVER['SERVER_NAME'] = $domain;
+    $_ENV['HTTP_HOST'] = $domain;
+    $_ENV['SERVER_NAME'] = $domain;
+}
+
+
 // ** MySQL 設定 - こちらの情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
 define('DB_NAME', 'kohimoto_kirsche');

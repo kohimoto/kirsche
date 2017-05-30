@@ -15,6 +15,13 @@
 </IfModule>
 # END SAKURA Internet Inc.
 
+#SSIópê›íË 2017.05.30 kohinata
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP:X-Sakura-Forwarded-For} ^$
+RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
+</IfModule>
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
