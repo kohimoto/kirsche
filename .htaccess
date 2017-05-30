@@ -19,7 +19,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP:X-Sakura-Forwarded-For} ^$
-RewriteRule ^(.*)$ https://kohimoto-stg.tk/$1 [R=301,L]
+RewriteRule ^(.*)$ https://kirsche-stg.tk/$1 [R=301,L]
 </IfModule>
 
 # BEGIN WordPress
