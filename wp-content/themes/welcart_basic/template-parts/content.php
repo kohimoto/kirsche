@@ -4,7 +4,7 @@
  * @subpackage Welcart_Basic
  */
 ?>
-
+<section class="front-li cf">
 <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 <?
 if(0){
@@ -32,3 +32,4 @@ if(0){
 	</div><!-- .entry-content -->
 
 </article>
+</section>

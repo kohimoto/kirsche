@@ -808,3 +808,65 @@ div.cart_navi li.current::after {
       border-bottom: 0;
   }
 }
+/*** notes ***/
+.notes .item-name{
+  text-align:center;
+  font-weight:bold;
+  padding-bottom:0.5em;
+}
+.notes .subtitle{
+  padding-bottom:2em;
+  font-weight:bold;
+  text-align:center;
+}
+.notes .item-description{
+  text-align:center;
+  padding-bottom: 60px;
+}
+/*** contact ***/
+.contact .item-name{
+  text-align:center;
+  font-weight:bold;
+  padding-bottom:0.5em;
+}
+.contact .subtitle{
+  padding-bottom:2em;
+  font-weight:bold;
+  text-align:center;
+}
+.contact .item-description{
+  text-align:center;
+  padding-bottom: 60px;
+}
+.contact .fixmessage{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact li{
+  list-style: none;
+  display: inline;
+}
+.contact ul{
+  margin: 0;
+}
+/*** about ***/
+.about-box{
+  padding-bottom: 100px;
+}
+.about-box h3{
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+.about-box p{
+  text-align: center;
+}
+
+.fixedpage .button{
+  text-align:center;
+}
+.fixedpage .border{
+  border:1px solid #000;
+  width:250px;
+  margin: 0 auto 60px;
+}
