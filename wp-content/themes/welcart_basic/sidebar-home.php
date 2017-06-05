@@ -22,7 +22,7 @@ global $usces; ?>
 			'title' => __('Log-in','usces'),
 			'icon' => 1,
 		);
-		the_widget( 'Welcart_login', $Welcart_login, $args );	
+		the_widget( 'Welcart_login', $Welcart_login, $args );
 
 
 		//Default Welcart Category Widget
@@ -37,12 +37,12 @@ global $usces; ?>
 			'icon' => 1,
 			'cat_slug' => 'itemgenre'
 		);
-		the_widget( 'Welcart_category', $Welcart_category, $args );	
+		the_widget( 'Welcart_category', $Welcart_category, $args );
 
-		
+
 	} ?>
     </div>
-    
+
     <div class="columncenter">
     <?php if ( ! dynamic_sidebar( 'center-widget-area' ) ){
 
@@ -64,12 +64,12 @@ global $usces; ?>
 			'icon' => 1,
 			'num' => $num
 		);
-		the_widget( 'Welcart_featured', $Welcart_featured, $args );	
+		the_widget( 'Welcart_featured', $Welcart_featured, $args );
 
-		
+
 	} ?>
 	</div>
-	
+
 	<div class="columnright">
 		<?php if ( ! dynamic_sidebar( 'right-widget-area' ) ): ?>
 			<?php
@@ -85,7 +85,7 @@ global $usces; ?>
 				'icon' => 1,
 				);
 				the_widget( 'Welcart_calendar', $Welcart_calendar, $args );
-				
+
 			?>
 		<?php endif; ?>
 	</div>
@@ -98,7 +98,7 @@ global $usces; ?>
 	<div class="button"><a href="/category/item/"><button>Shop</button></a></div>
 
   <div class="info_area">
-    <h2>Thanks dammy dammy</h2>
-    <h3>dammy dammy text dammy dammy textdammy dammy text dammy dammy text  </h3>
+    <h2>Thanks for coming</h2>
+    <h3>This shop is all created, managed, supervised by degital creative duo <img src="images/kohimoto_logo.png" alt="kohimoto">.<br>
+Hope to see you soon. Thank you &#9829;</h3>
   </div>
-
