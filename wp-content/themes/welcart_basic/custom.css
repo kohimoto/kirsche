@@ -743,6 +743,10 @@ div.cart_navi li.current::after {
   text-align: left;
   padding: 4em 2em 0 ;
 }
+#cart_table td.subtotal, 
+#cart_table th.subtotal{ 
+  text-align: center !important; 
+}
 #cart_table tbody tr:last-child td {
   padding: 4em 1em 4em;
 }
@@ -776,6 +780,10 @@ div.cart_navi li.current::after {
 }
 #cart_table .action {
   width: 20%
+}
+.cart-page .button{
+  text-align: center;
+  padding-top: 80px;
 }
 .send button{
   float: left;
@@ -811,6 +819,12 @@ div.cart_navi li.current::after {
   .customer_form td {
     border: 0;
   }
+}
+#confirm_table th{
+  background-color: #fff;
+}
+#confirm_table tr.ttl td{
+  background-color: #fff;
 }
 /*** notes ***/
 .notes .item-name{

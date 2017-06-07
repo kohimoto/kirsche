@@ -13,7 +13,7 @@
 	<meta name="format-detection" content="telephone=no"/>
 
 	<?php wp_head(); ?>
-	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/custom.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/custom.css?id=1111" media="all">
 </head>
 <?
 //2017.05.30 kohinata

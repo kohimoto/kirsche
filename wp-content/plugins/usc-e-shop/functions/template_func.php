@@ -2933,11 +2933,10 @@ function usces_get_confirm_rows( $out = '' ) {
 		}
 	
 		$row .= '<tr>
-			<td class="num">' . ($i + 1) . '</td>
 			<td class="thumbnail">';
 		$cart_thumbnail = wp_get_attachment_image( $pictid, array(60, 60), true );
 		$row .= apply_filters('usces_filter_cart_thumbnail', $cart_thumbnail, $post_id, $pictid, $i, $cart_row);
-		$row .= '</td><td class="productname">' . apply_filters('usces_filter_cart_item_name', esc_html($cartItemName), $args ) . '<br />';
+		$row .= '</td><td class="productname red">' . apply_filters('usces_filter_cart_item_name', esc_html($cartItemName), $args ) . '<br />';
 		if( is_array($options) && count($options) > 0 ){
 			$optstr = '';
 			foreach($options as $key => $value){
@@ -2962,10 +2961,9 @@ function usces_get_confirm_rows( $out = '' ) {
 		}
 		$row .= apply_filters( 'usces_filter_option_info_confirm', '', $cart_row, $args );
 		$row .= '</td>
-			<td class="unitprice">' . usces_crform($skuPrice, true, false, 'return') . '</td>
-			<td class="quantity">' . $cart_row['quantity'] . '</td>
-			<td class="subtotal">' . usces_crform(($skuPrice * $cart_row['quantity']), true, false, 'return') . '</td>
-			<td class="action">';
+			<td class="quantity red">' . $cart_row['quantity'] . '</td>
+			<td class="subtotal red">' . usces_crform(($skuPrice * $cart_row['quantity']), false, false, 'return') . ' JPY</td>
+			<td class="action red">';
 		$row .= apply_filters('usces_additional_confirm', '', array($i, $post_id, $sku_code));
 		$row .= '</td>
 		</tr>';
@@ -3034,7 +3032,7 @@ function uesces_addressform( $type, $data, $out = 'return' ){
 			
 			$shipping_address_info = '';
 			if( isset($values['delivery']) ) {
-				$shipping_address_info = '<tr class="ttl"><td colspan="2"><h3>'.__('Shipping address information', 'usces').'</h3></td></tr>';
+				$shipping_address_info = '<tr class="ttl"><td colspan="2"><h3>'.__('Shipping address information', '').'</h3></td></tr>';
 				$shipping_address_info .= usces_custom_field_info($data, 'delivery', 'name_pre', 'return');
 				$shipping_address_info .= '<tr><th>'.apply_filters( 'usces_filters_addressform_name_label', __('Full name', 'usces'), $type, $values, $applyform ).'</th><td>' . sprintf(_x('%s', 'honorific', 'usces'), (esc_html($values['delivery']['name1']) . ' ' . esc_html($values['delivery']['name2'])) ) . '</td></tr>';
 				$deli_furigana = ( '' == (trim($values['delivery']['name3']) . trim($values['delivery']['name4'])) ) ? '' : sprintf(_x('%s', 'honorific', 'usces'), (esc_html($values['delivery']['name3']) . ' ' . esc_html($values['delivery']['name4'])) );
