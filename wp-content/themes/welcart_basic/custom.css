@@ -67,6 +67,7 @@
 }
 .menu-show #nav {
   visibility: visible;
+  -webkit-visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
