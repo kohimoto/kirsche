@@ -751,9 +751,9 @@ div.cart_navi li.current::after {
   text-align: left;
   padding: 4em 2em 0 ;
 }
-#cart_table td.subtotal, 
-#cart_table th.subtotal{ 
-  text-align: center !important; 
+#cart_table td.subtotal,
+#cart_table th.subtotal{
+  text-align: center !important;
 }
 #cart_table tbody tr:last-child td {
   padding: 4em 1em 4em;
@@ -1049,10 +1049,6 @@ figure.snip1283:hover figcaption{
 }
 
 @media screen and (max-width: 768px) {
-  .about_img_box{
-    width: 100%;
-    padding-bottom: 4em;
-  }
   .about_main-image img{
     max-width: 500px;
     padding-bottom: 3em;
@@ -1065,7 +1061,11 @@ figure.snip1283:hover figcaption{
     left: 6em;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 550px) {
+  .about_img_box{
+    width: 100%;
+    padding-bottom: 4em;
+  }
   .main-image img.text01{
     top: 6em;
     left: 4em;
