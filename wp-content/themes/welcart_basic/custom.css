@@ -1054,7 +1054,7 @@ figure.snip1283:hover figcaption{
     left: 6em;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 550px) {
   .about_img_box{
     width: 100%;
     padding-bottom: 4em;
