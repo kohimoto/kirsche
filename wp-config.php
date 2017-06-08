@@ -35,6 +35,7 @@ if( isset($_SERVER['HTTP_X_SAKURA_FORWARDED_FOR']) ) {
 // ** MySQL 設定 - こちらの情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
 define('DB_NAME', 'kohimoto_kirsche_dev');
+//define('DB_NAME', 'kohimoto_kirsche');
 
 /** MySQL データベースのユーザー名 */
 define('DB_USER', 'kohimoto');
