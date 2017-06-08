@@ -1059,6 +1059,12 @@ figure.snip1283:hover figcaption{
     width: 100%;
     padding-bottom: 4em;
   }
+  .about_img_box .itemimg {
+      padding: 0 1em;
+  }
+  .about_main-image {
+    padding: 0 1em;
+  }
   .main-image img.text01{
     top: 6em;
     left: 4em;
