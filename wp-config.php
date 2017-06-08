@@ -20,21 +20,22 @@
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
 //プロクシでIPが入るとSSLアクセス状態をセットする　2017.05.30 kohinata
-$domain = "kirsche-stg.tk";
-//$domain = "kirsche.com"; //本番
-if( isset($_SERVER['HTTP_X_SAKURA_FORWARDED_FOR']) ) {
-    $_SERVER['HTTPS'] = 'on';
-    $_ENV['HTTPS'] = 'on';
-    $_SERVER['HTTP_HOST'] = $domain;
-    $_SERVER['SERVER_NAME'] = $domain;
-    $_ENV['HTTP_HOST'] = $domain;
-    $_ENV['SERVER_NAME'] = $domain;
-}
+//$domain = "kirsche-stg.tk";
+////$domain = "kirsche.com"; //本番
+//if( isset($_SERVER['HTTP_X_SAKURA_FORWARDED_FOR']) ) {
+//    $_SERVER['HTTPS'] = 'on';
+//    $_ENV['HTTPS'] = 'on';
+//    $_SERVER['HTTP_HOST'] = $domain;
+//    $_SERVER['SERVER_NAME'] = $domain;
+//    $_ENV['HTTP_HOST'] = $domain;
+//    $_ENV['SERVER_NAME'] = $domain;
+//}
 
 
 // ** MySQL 設定 - こちらの情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'kohimoto_kirsche_dev');
+//define('DB_NAME', 'kohimoto_kirsche_dev');
+define('DB_NAME', 'kohimoto_kirsche');
 
 /** MySQL データベースのユーザー名 */
 define('DB_USER', 'kohimoto');
@@ -43,8 +44,8 @@ define('DB_USER', 'kohimoto');
 define('DB_PASSWORD', 'kohimoto_manage');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'mysql537.db.sakura.ne.jp');
-//define('DB_HOST', 'localhost');
+//define('DB_HOST', 'mysql537.db.sakura.ne.jp');
+define('DB_HOST', 'localhost');
 
 /** データベースのテーブルを作成する際のデータベースのキャラクターセット */
 define('DB_CHARSET', 'utf8');
