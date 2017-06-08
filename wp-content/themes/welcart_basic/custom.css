@@ -125,9 +125,16 @@
     position: absolute;
 }
 @media screen and (max-width: 768px) {
-  #nav {
-    width: 100%;
-  }
+#nav {
+  width: 100%;
+  min-width: 768px;
+}
+#nav .table .table-cell{
+  left: 3em;
+}
+#nav .nav-toggle{
+  left: 3em;
+}
 #nav ul li {
     display: block;
   }
