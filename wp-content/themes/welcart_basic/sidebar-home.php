@@ -98,7 +98,7 @@ global $usces; ?>
 	<div class="button"><a href="/category/item/"><button>Shop</button></a></div>
 
   <div class="info_area">
-    <h2>Thanks for coming</h2>
+    <h2>Thanks for comming</h2>
     <h3>This shop is all created, managed, supervised by degital creative duo <img src="images/kohimoto_logo.png" alt="kohimoto">.<br>
 Hope to see you soon. Thank you &#9829;</h3>
   </div>
