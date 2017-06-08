@@ -1,9 +1,9 @@
 $(function () {
 //	'use strict';
 
-	$('.js-fullheight').css('height', window.height);
+	$('.js-fullheight').css('height', window.innerHeight);
 	$(window).resize(function(){
-		$('.js-fullheight').css('height', window.height);
+		$('.js-fullheight').css('height', window.innserHeight);
 	});
 
 	$('.nav-toggle').on('click', function(event) {
