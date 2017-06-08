@@ -14,6 +14,7 @@
 
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/custom.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/animate.css" media="all">
 </head>
 <?
 //2017.05.30 kohinata
@@ -66,7 +67,8 @@ $access_url = $_SERVER["REQUEST_URI"];
 	<?php if( ( is_front_page() || is_home() ) || preg_match("/about/", $access_url) && get_header_image() ): ?>
 	<div class="main-image">
 	<h1 class="logo"><a href="/"><img src="/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
-		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
+			<img src="/wp-content/themes/welcart_basic/images/about/a_h_01.jpg" width="1140px" alt="header_images">
+			<img src="/wp-content/themes/welcart_basic/images/about/a_h_t_01.png" alt="header_text" class="text01 fadeInRight animated">
 	</div><!-- main-image -->
 	<?php endif; ?>
 

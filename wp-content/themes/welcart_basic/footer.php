@@ -1,12 +1,12 @@
 	</div><!-- #main -->
-	
-	
+
+
 	<?php if(! wp_is_mobile()): ?>
-	
+
 		<div id="toTop" class="wrap fixed"><a href="#masthead"><i class="fa fa-chevron-circle-up"></i></a></div>
-	
+
 	<?php endif; ?>
-	
+
 	<footer id="colophon" role="contentinfo">
 
 
@@ -14,8 +14,9 @@
 
 	</footer><!-- #colophon -->
 	<script src="/wp-content/themes/welcart_basic/js/jquery.min.js"></script>
-	<script src="/wp-content/themes/welcart_basic/js/navnemu.js"></script><!-- navmenu -->
-	
+	<script src="/wp-content/themes/welcart_basic/js/navnemu.js"></script>
+	<script src="/wp-content/themes/welcart_basic/js/animation.js"></script><!-- navmenu -->
+
 	<?php wp_footer(); ?>
 	</body>
 </html>
