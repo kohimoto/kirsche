@@ -72,7 +72,7 @@ foreach($arr as $tag){
 						?>
 						<div class="itemsubimg">
 						<?php foreach( $imageid as $id ) : ?>
-							<a href="<?php usces_the_itemImageURL($id); ?>" <?php echo apply_filters( 'usces_itemimg_anchor_rel', NULL ); ?>><?php usces_the_itemImage( $id, 135, 135, $post ); ?></a>
+							<a href="<?php usces_the_itemImageURL($id); ?>" <?php echo apply_filters( 'usces_itemimg_anchor_rel', NULL ); ?>><?php usces_the_itemImage( $id, 335, 335, $post ); ?></a>
 						<?php endforeach; ?>
 						</div>
 						<?php endif; ?>

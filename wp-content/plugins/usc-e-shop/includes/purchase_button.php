@@ -12,9 +12,26 @@ $purchase_disabled = '';
 $purchase_html = '';
 
 if( 'acting' != substr($payments['settlement'], 0, 6) || 0 == $usces_entries['order']['total_full_price'] ){
+
+if(0){
 	$purchase_html = '<form id="purchase_form" action="' . USCES_CART_URL . '" method="post" onKeyDown="if (event.keyCode == 13) {return false;}">
 		<div class="send"><input name="backDelivery" type="submit" id="back_button" class="back_to_delivery_button" value="'.apply_filters('usces_filter_confirm_prebutton_value', __('Back to payment method page.', 'usces')).'"' . apply_filters('usces_filter_confirm_prebutton', NULL) . ' />
 		<input name="purchase" type="submit" id="purchase_button" class="checkout_button" value="'.__('Checkout', 'usces').'"' . apply_filters('usces_filter_confirm_nextbutton', NULL) . $purchase_disabled . ' /></div>';
+
+}else{
+
+if(0){
+	$purchase_html = '<form id="purchase_form" action="' . USCES_CART_URL . '" method="post" onKeyDown="if (event.keyCode == 13) {return false;}">
+		<div class="send"><button name="backDelivery" type="submit" id="back_button" class="back_to_delivery_button" value="'.apply_filters('usces_filter_confirm_prebutton_value', __('Back to payment method page.', '')).'"' . apply_filters('usces_filter_confirm_prebutton', NULL) . ' > << Back</button>
+		<input name="purchase" type="submit" id="purchase_button" class="checkout_button" value="'.__('Checkout', 'usces').'"' . apply_filters('usces_filter_confirm_nextbutton', NULL) . $purchase_disabled . ' /></div>';
+}else{
+
+	$purchase_html = '<form id="purchase_form" action="' . USCES_CART_URL . '" method="post" onKeyDown="if (event.keyCode == 13) {return false;}">
+		<div class="send"><button name="backDelivery" type="submit" id="back_button" class="back_to_delivery_button" value="'.apply_filters('usces_filter_confirm_prebutton_value', __('Back to payment method page.', '')).'"' . apply_filters('usces_filter_confirm_prebutton', NULL) . ' > << Back</button>
+		<button name="purchase" type="submit" id="purchase_button" class="checkout_button" value="'.__('Checkout', '').'"' . apply_filters('usces_filter_confirm_nextbutton', NULL) . $purchase_disabled . ' >Checkout</button></div>';
+}
+
+}
 	$html .= apply_filters('usces_filter_confirm_inform', $purchase_html, $payments, $acting_flag, $rand, $purchase_disabled);
 	$html .= '</form>';
 }else{
