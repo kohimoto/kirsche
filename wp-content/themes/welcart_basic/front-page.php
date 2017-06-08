@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<h2>About this shop</h2>	
-	<div class="button"><a href="/about"><button>About us</button></a></div>
+	<div class="button"><a href="/about"><button>About</button></a></div>
 	<h2>Take a look!</h2>	
 
 	<div id="primary" class="site-content">

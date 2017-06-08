@@ -35,7 +35,7 @@ $access_url = $_SERVER["REQUEST_URI"];
 		<div class="js-fullheight table-cell">
 		<ul>
 		<li><a href="/">TOP</a></li>
-		<li><a href="/about">ABOUT US</a></li>
+		<li><a href="/about">ABOUT</a></li>
 		<li><a href="/contact">CONTACT</a></li>
 		<li><a href="/notes">NOTES</a></li>
 		</ul>
