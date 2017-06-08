@@ -512,7 +512,7 @@ footer .copyright a:hover{
   padding-bottom: 4.2857em;
 }
 .front-il .itemsoldout {
-    color: #000;
+    color: #ff0030;
 }
 @media screen and (max-width: 768px) {
   .front-il article {
