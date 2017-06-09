@@ -277,7 +277,7 @@ h2{
   font-weight: normal;
   font-style: italic;
   line-height: 1.4285;
-  padding-bottom: 1em;
+  padding: 0 0.25em 1em;
   text-align: center;
 }
 h3{
@@ -516,6 +516,7 @@ footer .copyright a:hover{
 }
 .front-il .itemsoldout {
     color: #ff0030;
+    text-align: center;
 }
 @media screen and (max-width: 768px) {
   .front-il article {
@@ -1076,7 +1077,7 @@ figure.snip1283:hover figcaption{
     padding: 0 1em;
   }
   .main-image img.text01{
-    top: 6em;
+    top: 5em;
     left: 4em;
   }
 }
