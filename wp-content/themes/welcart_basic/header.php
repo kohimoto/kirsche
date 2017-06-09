@@ -12,7 +12,15 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="format-detection" content="telephone=no"/>
 
-	<?php wp_head(); ?>
+<?php
+//2017.06.09 kohinata tileタグ変更
+ob_start();
+$header = wp_head(); 
+$head = ob_get_contents();
+$head = preg_replace("/<title>.*<\/title>/","<title>kirsche</title>", $head);
+ob_end_clean();
+echo $head;
+?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/custom.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/welcart_basic/animate.css" media="all">
 </head>

@@ -22,7 +22,7 @@
 						</div>
 					</article>
 				<?php else: ?>
-					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+					<p class="no-date"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 				<?php endif; ?>
 			</div><!-- .sof -->
 

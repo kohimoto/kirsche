@@ -146,7 +146,7 @@ if(0){
 								</div>
 
 								<?php if( !usces_have_zaiko() ) : ?>
-								<div class="itemsoldout red"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','') ); ?></div>
+								<div class="itemsoldout red"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('Sold Out','') ); ?></div>
 								<?php else : ?>
 								<div class="c-box">
 <?
@@ -218,7 +218,7 @@ query_posts($query);
 		</div>
 	</article>
 	<?php else: ?>
-	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<p class="no-date"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 	<?php endif; ?>
 	</div><!-- .sof -->
 	<?php else: ?>

@@ -264,6 +264,9 @@ body,button,input,.item-info .skubutton{
 body{
   color:#000;
 }
+.no-date{
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   body{
     font-size: 10px;
