@@ -817,6 +817,13 @@ div.cart_navi li.current::after {
   border: 1px solid #aaa;
 }
 
+#time.customer_form tr:nth-child(1),
+#time.customer_form tr:nth-child(2),
+#time.customer_form tr:nth-child(3) {
+    display: none;
+}
+
+
 @media screen and (max-width: 768px) {
   button.s_button {
       margin: 1em;
