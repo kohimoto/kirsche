@@ -195,17 +195,23 @@ if(0){
 <?
 //2017.05.22 kohinata
 $cat = get_the_category();
-$cat = $cat[0];
-$cat_id = $cat->cat_ID;
-
+$cate_arr = array();
+foreach($cat as $k => $v){
+  if($v->term_id == "2"){
+    //ƒJƒeƒSƒŠ‚ªitem‚¾‚Á‚½‚çskip
+    continue;
+  }else{
+    $cate_arr[] = $v->term_id;
+  }
+}
+$cat_id = implode("," , $cate_arr);
 $id = $post->ID;
 $query = array();
 $query["posts_per_page"]    = 3;
 $query["cat"]               = $cat_id;
 $query["post_status"]       = "publish";
-$query["post__not_in"][]    = $id; //ç¾åœ¨ã®è¨˜äº‹éžè¡¨ç¤º
+$query["post__not_in"][]    = $id; 
  
-//query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
 query_posts($query); 
 ?>
 <?php if ( 'page' == get_option('show_on_front') ): ?>
