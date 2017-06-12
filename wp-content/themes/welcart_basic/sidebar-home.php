@@ -99,6 +99,6 @@ global $usces; ?>
 
   <div class="info_area">
     <h2>Thanks for comming</h2>
-    <h3>This shop is all created, managed, supervised by degital creative duo <a target=_blank href="https://kohimoto.com">kohimoto</a>.<br>
-Hope to see you soon. Thank you &#9829;</h3>
+    <h3>Hope to see you soon. Thank you &#9829;<br>
+This shop is all created, managed, supervised by <a target=_blank href="https://kohimoto.com">kohimoto</a>.</h3>
   </div>
