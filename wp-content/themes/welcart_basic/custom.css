@@ -659,12 +659,15 @@ footer .copyright a:hover{
 }
 @media screen and (max-width: 768px) {
   #itempage #img-box {
-      margin-right: 0;
-      padding-bottom: 0;
-      width: 100%;
+    margin-right: 0;
+    padding-bottom: 0;
+    width: 100%;
   }
   .detail-box{
-      width: 100%;
+    width: 100%;
+  }
+  .site-content{
+    padding: 0 0.25em;
   }
 }
 .tag_area{
