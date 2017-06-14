@@ -20,7 +20,7 @@
 	<meta property='og:type' content='article'>
 	<meta property='og:description' content='Kirsche | Online shop for vintage clothes and paper products'>
 
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="/favicon.ico">
 
 <?php
 //2017.06.09 kohinata tileタグ変更
