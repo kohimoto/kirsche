@@ -12,10 +12,20 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="format-detection" content="telephone=no"/>
 
+	<meta name='description' content='Kirsche | Online shop for vintage clothes and paper products'>
+	<meta name='keywords' content='Kirsche,キルシェ,vintage,ヴィンテージ,used,古着,洋服,fasion,ファッション,名刺,onlinestore,オンラインショップ,handmade,手作り,カード,吉祥寺'>
+	<meta property='og:title' content='Kirsche'>
+	<meta property='og:site_name' content='Kirsche'>
+	<meta property='og:url' content='https://kirsche.shop/'>
+	<meta property='og:type' content='article'>
+	<meta property='og:description' content='Kirsche | Online shop for vintage clothes and paper products'>
+
+	<link rel="shortcut icon" href="favicon.ico">
+
 <?php
 //2017.06.09 kohinata tileタグ変更
 ob_start();
-$header = wp_head(); 
+$header = wp_head();
 $head = ob_get_contents();
 $head = preg_replace("/<title>.*<\/title>/","<title>kirsche</title>", $head);
 ob_end_clean();
