@@ -553,7 +553,7 @@ footer .copyright a:hover{
     letter-spacing: 0;
     text-align: left;
 }
-.cat-il .itemsoldout {
+.cat-il.type-grid .itemsoldout {
     color: #ff0030;
     text-align: center;
 }
