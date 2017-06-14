@@ -480,14 +480,18 @@ header{
 
 
 /*** footer ***/
-.info_area{
-    padding: 0 2em 0;
+.info_area {
+    background-color: #fdfad8;
+    padding: 3em 2em;
+}
+.info_area h2 {
+    padding: 0 0.25em;
 }
 footer {
     background-color:inherit;
     clear: both;
     color: #000;
-    padding: 0 1em 5.7142em;
+    padding: 0 1em 2em;
 }
 footer .copyright a{
   color: #000;
