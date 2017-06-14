@@ -61,6 +61,5 @@
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-
 <?php get_sidebar('home'); ?>
-<?php get_footer(); ?>
+<?php wp_reset_query();get_footer(); ?>

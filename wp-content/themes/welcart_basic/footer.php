@@ -1,5 +1,13 @@
 	</div><!-- #main -->
 
+	<?php if(  is_home() || is_front_page() ): ?>
+  	<div class="info_area">
+  	  <h2>Thanks for comming</h2>
+  	  <h3>Hope to see you soon. Thank you &#9829;<br>
+Th	is shop is all created, managed, supervised by <a target=_blank href="https://kohimoto.com">kohimoto</a>.</h3>
+  	</div>
+
+	<?php endif; ?>
 
 	<?php if(! wp_is_mobile()): ?>
 
