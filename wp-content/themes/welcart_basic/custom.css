@@ -553,6 +553,10 @@ footer .copyright a:hover{
     letter-spacing: 0;
     text-align: left;
 }
+.cat-il .itemsoldout {
+    color: #ff0030;
+    text-align: center;
+}
 .cat-il.type-grid article {
     width: 30%;
     margin: 0 4% 0 0;
