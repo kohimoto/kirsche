@@ -30,12 +30,11 @@ get_header(); ?>
 								<a href="<?php the_permalink() ?>"><?php usces_the_itemImage(0, 300, 300); ?></a>
 								<?php welcart_basic_campaign_message(); ?>
 							</div>
-							<div class="itemsoldout red"><?php _e('Sold Out', '' ); ?></div>
-							<div class="itemname"><a class="red" href="<?php the_permalink() ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
-							<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); ?> JPY</div>
 							<?php if(! usces_have_zaiko_anyone() ) : ?>
 							<div class="itemsoldout red"><?php _e('Sold Out', '' ); ?></div>
 							<?php endif; ?>
+							<div class="itemname"><a class="red" href="<?php the_permalink() ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
+							<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); ?> JPY</div>
 
 
 						</article>
