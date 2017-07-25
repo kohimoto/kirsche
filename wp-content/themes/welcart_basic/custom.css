@@ -367,6 +367,12 @@ h1.logo{
     left: 50%;
     margin-left: -35px;
   }
+  .main-image > img {
+    padding: 3em 1em 0;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
 }
 .main-image{
   width: 100%;
@@ -393,6 +399,9 @@ h1.logo{
   .main-image img{
     width: 100%;
   }
+  .main-image > img {
+    padding-top: 4em;
+}
 }
 
 /*** header ***/
