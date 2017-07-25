@@ -489,8 +489,15 @@ header{
 
 
 /*** footer ***/
+.wave img {
+    width: 100%;
+}
+.wave img {
+  text-align: center;
+  display: block;
+}
 .info_area {
-    background-color: #fdfad8;
+    background-color: #fff;
     padding: 3em 2em;
     text-align: center;
 }
@@ -501,7 +508,7 @@ footer {
     background-color:inherit;
     clear: both;
     color: #000;
-    background-color: #fdfad8;
+    background-color: #fff;
 }
 footer .copyright a{
   color: #000;

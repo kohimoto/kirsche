@@ -1,6 +1,9 @@
 	</div><!-- #main -->
 
 	<?php if(  is_home() || is_front_page() ): ?>
+		<div class="wave">
+			<img src="/wp-content/themes/welcart_basic/images/about/wave_b_g.gif" alt="">
+		</div>
   	<div class="info_area">
   	  <h2>Thanks for comming</h2>
   	  <h3>Hope to see you soon. Thank you &#9829;<br>
