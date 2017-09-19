@@ -95,5 +95,5 @@ global $usces; ?>
 <?
 } //if(0)
 ?>
-	<div class="button"><a href="/category/item/"><button>Shop</button></a></div>
+<div class="button"><a href="/category/item/"><button>Shop</button></a></div>
 
