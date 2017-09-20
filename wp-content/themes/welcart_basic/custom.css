@@ -305,15 +305,15 @@ button{
   cursor: pointer;
   font-size: 2em;
   font-weight: bold;
-  color:#ff0030;
-  border: solid 3px #ff0030;
+  color:#fff;
   padding: 0.5em 2em 0.6em;
-  background-color: #fff;
+  background-color: #ff0030;
   line-height: 1;
 }
 button:hover{
-  color:#fff;
-  background-color: #ff0030;
+  color:#ff0030;
+  background-color: #fff;
+  border: solid 2px #ff0030;
 }
 .red {
   color: #ff0030;
